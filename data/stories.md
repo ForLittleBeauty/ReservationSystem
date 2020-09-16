@@ -6,7 +6,7 @@
   - utter_time_confirm
 * confirm_time
   - utter_success
-* stop
+* bye
 
 ## reservation 2
 * make_reservation
@@ -15,7 +15,7 @@
   - action_time_number_confirm
 * confirm_time
   - utter_success
-* stop
+* bye
 
 ## wait for consulting
 * wait_consult

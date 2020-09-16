@@ -11,6 +11,7 @@ intents:
   - confirm_time
   - wait_consult
   - give_time_number
+  - bye
 
 
 responses:

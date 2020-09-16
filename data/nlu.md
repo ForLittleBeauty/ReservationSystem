@@ -12,6 +12,12 @@
 - see you around
 - see you later
 
+## intent:bye
+- 再见
+- 再会
+- 拜
+- 拜拜
+
 ## intent:affirm
 - yes
 - indeed
