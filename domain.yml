@@ -1,0 +1,65 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - make_reservation
+  - give_time
+  - confirm_time
+  - wait_consult
+  - give_time_number
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_choose_time:
+  - text: "您好，请选择咨询时间：\n明天下午2点，明天下午3点，明天下午4点"
+
+  utter_time_confirm:
+  - text: "这边确认一下，您选择的时间是{time}，对吗？"
+
+  utter_success:
+  - text: "预约成功，请于预约时间再次访问心聆，祝您生活愉快，再见"
+
+  utter_please_wait:
+  - text: "心理咨询师繁忙，请耐心等待"
+
+actions:
+  - action_time_confirm
+  - action_time_number_confirm
+
+
+entities:
+  - time
+  - time_number
+
+slots:
+  time:
+    type: text
+  time_number:
+    type: text
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
